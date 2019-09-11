@@ -95,13 +95,13 @@ class App extends Component {
       {
         id: 0,
         name: "Alireza",
-        phone: "010-0000-0001",
+        phone: "012-345-6789",
         line: "Phone"
       },
       {
         id: 1,
         name: "Mohammad",
-        phone: "010-0000-0001",
+        phone: "012-345-6789",
         line: "Home"
       }
     ],
