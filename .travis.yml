@@ -9,4 +9,4 @@ before_install:
 
 
 script:
-  - docker run alirezazekvat\docker-react npm run coverage
+  - docker run alirezazekvat\docker-react npm run test -- --coverage
