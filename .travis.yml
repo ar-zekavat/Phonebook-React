@@ -10,3 +10,12 @@ before_install:
 
 script:
   - docker run alirezazekvat\docker-react npm run test -- --coverage
+
+after_success:
+  - docker build -t alirezazekvat/phone-book .
+
+  #Log in to docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take this images and push them to dockerhub
+  - docker push alirezazekvat/phone-book
+
